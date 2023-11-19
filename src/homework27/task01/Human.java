@@ -9,6 +9,7 @@ package homework27.task01;
  */
 
 public class Human {
+
   private String name;
   private int age;
 
@@ -18,18 +19,25 @@ public class Human {
     this.age = age;
   }
 
-  private String getName() {
+  public String getName() {
+
     return name;
   }
 
-  private int getAge() {
+  public int getAge() {
+
     return age;
   }
-  private void setName(String name) {
+
+  public void setName(String name) {
+
     this.name = name;
   }
 
-  private void setAge(int age) {
+  public void setAge(int age) {
+    if (age < 0) {
+      return;
+    }
     this.age = age;
   }
 
