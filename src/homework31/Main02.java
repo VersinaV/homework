@@ -12,20 +12,27 @@ package homework31;
 Обычно это числа от 1 до 6
  */
 
+import java.util.Random;
 import java.util.Scanner;
 
 public class Main02 {
 
   public static void main(String[] args) {
     System.out.println("Cколько костей выкидывать?");
-
+    Random random = new Random();
     Scanner scanner = new Scanner(System.in);
     int number = scanner.nextInt();
 
-    if (number >= 1 && number <= 6) {
-      System.out.println("Kоличество костей: " + number + " выброшенныo");
+    System.out.println("Kоличество костей: " + number);
+
+    if (number == 1) {
+      System.out.println("Выпало: " + (random.nextInt(6) + 1));
+    } else if (number == 2) {
+      System.out.println("Выпало: " + (random.nextInt(6) + 1) + " и " + (random.nextInt(6) + 1));
     } else {
-      System.out.println("Hет такого количества костей");
+      System.out.println("Нет такого количества костей");
+
+
     }
   }
 }
