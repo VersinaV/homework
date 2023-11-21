@@ -14,7 +14,7 @@ public class Main02 {
     int a = 3;
     int b = 5;
     double c = 7;
-    int d = 5;
+    double d = 5;
 
     double result = a * (b - d) + (c + a) / d;
     System.out.println("Результат: " + result);
