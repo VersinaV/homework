@@ -1,6 +1,7 @@
 package homework35.task01;
 
 public class LightBulb {
+
   private int barCode;
   private String manufacturer;
   private int brightness;
@@ -8,7 +9,8 @@ public class LightBulb {
   private boolean rgb;
   private double price;
 
-  public LightBulb(int barCode, String manufacturer, int brightness, int power, boolean rgb, double price) {
+  public LightBulb(int barCode, String manufacturer, int brightness, int power, boolean rgb,
+      double price) {
     this.barCode = barCode;
     this.manufacturer = manufacturer;
     this.brightness = brightness;
@@ -18,10 +20,12 @@ public class LightBulb {
   }
 
   public double getPrice() {
+
     return price;
   }
 
   public void setPrice(double price) {
+
     this.price = price;
   }
 
