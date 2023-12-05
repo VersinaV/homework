@@ -10,6 +10,7 @@ public class Main {
 используя разработанный ранее метод.
    */
 
+  // Метод getPlanetName возвращает название планеты по выбранному числу
   public static String getPlanetName(int choice) {
     switch (choice) {
       case 1:
@@ -32,16 +33,16 @@ public class Main {
         return "Неизвестная планета";
     }
   }
-
+  // Метод getPlanetType определяет тип планеты на основе её имени
   public static String getPlanetType(String planetName) {
     String planetType;
     switch (planetName) {
-      case "Меркур":
-      case "Венера":
       case "Земля":
-      case "Марс":
         planetType = "Обитаемая планета";
         break;
+      case "Марс":
+      case "Меркур":
+      case "Венера":
       case "Юпитер":
       case "Сатурн":
         planetType = "Газовый гигант";
@@ -57,7 +58,7 @@ public class Main {
     return planetType;
   }
 
-
+  // Основной метод программы, где пользователь выбирает планету и выводится её тип
   public static void main(String[] args) {
     Scanner scanner = new Scanner(System.in);
 
