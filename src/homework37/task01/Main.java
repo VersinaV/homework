@@ -29,7 +29,7 @@ public class Main {
     remote.switchChannelForward(tv);
     System.out.println("Текущий канал: " + tv.getCurrentChannel());
     System.out.println("Ведите следусий канал: ");
-    // Получение значения канала от пользователя
+    // Получение значения канала от пользователя.
     int channels = scanner.nextInt();
     if (channels >= 0) {
       remote.switchToChannel(tv, channels);
