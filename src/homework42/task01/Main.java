@@ -18,7 +18,7 @@ public class Main {
     Monster monster = new Monster("Dragon", 50, 100);
 
     // Создание игрока
-    Player player = new Player("Hero", 60, 50);
+    Player player = new Player("Hero", 60, 50){};
 
     // Вывод информации о созданных существах
     System.out.println("Монстр: " + monster);

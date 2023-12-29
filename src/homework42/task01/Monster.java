@@ -8,4 +8,5 @@ public class Monster extends Entity {
   public Monster(String name, int amountOfHealth, int attackPower) {
     super(name, amountOfHealth, attackPower);
   }
+
 }

@@ -77,9 +77,8 @@ public abstract class Entity { // Существо - Entity
   public void takeDamage(Entity entity) {
     int damage = entity.getAttackPower(); // Получаем силу атаки монстра
     this.amountOfHealth -= damage; // Уменьшаем здоровье текущего существа на значение атаки монстра
-
     if (this.amountOfHealth < 0) {
-      this.amountOfHealth = 0; // Здоровье не может быть меньше Z
+      this.amountOfHealth = 0; // Здоровье не может быть меньше 0
     }
   }
 }
